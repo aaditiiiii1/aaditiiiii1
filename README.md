@@ -15,8 +15,8 @@
 ---
 # 📊 GitHub Stats:  
 <div align="center">  
-  <img src="https://github-readme-stats.vercel.app/api?username=aditi-coder-11&show_icons=true&show=reviews&theme=dark" width="49%" height="50%" alt="GitHub Streak Stats"/> 
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=aditi-coder-11&theme=dark&hide_border=false" width="49%" height="50%" alt="GitHub Streak Stats">  
+  <img src="https://github-readme-stats.vercel.app/api?username=aaditiii1&show_icons=true&show=reviews&theme=dark" width="49%" height="50%" alt="GitHub Streak Stats"/> 
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=aaditiii1&theme=dark&hide_border=false" width="49%" height="50%" alt="GitHub Streak Stats">  
 </div> 
 
 ---
@@ -24,19 +24,19 @@
 
 <div>
   <a href="https://github.com/Meetjain1/github-readme-activity-graph">
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=aditi-coder-11&theme=high-contrast" alt="Meet jain's GitHub Activity Graph" />
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=aaditiii1&theme=high-contrast" alt="Meet jain's GitHub Activity Graph" />
   </a>
 </div>
 
 ---
 ### 🔝 Top Contributed Repo  
-![](https://github-contributor-stats.vercel.app/api?username=aditi-coder-11&limit=5&theme=dark&combine_all_yearly_contributions=true)  
+![](https://github-contributor-stats.vercel.app/api?username=aaditiii1&limit=5&theme=dark&combine_all_yearly_contributions=true)  
 
 
 ---
 
 ## 🏆 GitHub Trophies  
-![](https://github-profile-trophy.vercel.app/?username=aditi-coder-11&theme=radical&no-frame=false&no-bg=false&margin-w=4)  
+![](https://github-profile-trophy.vercel.app/?username=aaditiii1&theme=radical&no-frame=false&no-bg=false&margin-w=4)  
 
 ---
 
