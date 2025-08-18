@@ -23,8 +23,8 @@
 
 
 <div>
-  <a href="https://github.com/Meetjain1/github-readme-activity-graph">
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=aaditiii1&theme=high-contrast" alt="Meet jain's GitHub Activity Graph" />
+  <a href="https://github.com/aaditiii1/github-readme-activity-graph">
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=aaditiii1&theme=high-contrast" alt="Aditi's GitHub Activity Graph" />
   </a>
 </div>
 
