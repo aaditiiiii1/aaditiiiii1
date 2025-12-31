@@ -25,7 +25,7 @@
 ---
 ## 📈 GitHub Activity  
 <p align="center">  
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=aaditiiiii1&bg_color=000000&color=FFA500&line=FFA500&point=FFA500&area=true&hide_border=true" alt="Aditi's GitHub Activity Graph" />  
+ <img src="https://github-readme-activity-graph.vercel.app/graph?username=aaditiiiii1&bg_color=000000&color=FFFFFF&line=FFFFFF&point=FFFFFF&area=true&hide_border=true" />
 </p>   
 
 ---
@@ -34,4 +34,5 @@
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=aaditiiiii1&theme=radical&no-frame=false&no-bg=false&margin-w=4" />
 </p>
+
 
