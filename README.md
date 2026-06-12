@@ -32,17 +32,9 @@
 
 <div align="center">
   <picture>
-    <source
-      media="(prefers-color-scheme: dark)"
-      srcset="https://raw.githubusercontent.com/aaditiiiii1/aaditiiiii1/output/pacman-contribution-graph-dark.svg">
-
-    <source
-      media="(prefers-color-scheme: light)"
-      srcset="https://raw.githubusercontent.com/aaditiiiii1/aaditiiiii1/output/pacman-contribution-graph.svg">
-
-    <img
-      alt="Pacman contribution graph"
-      src="https://raw.githubusercontent.com/aaditiiiii1/aaditiiiii1/output/pacman-contribution-graph.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/aaditiiiii1/aaditiiiii1/output/pacman-contribution-graph-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/aaditiiiii1/aaditiiiii1/output/pacman-contribution-graph.svg">
+    <img alt="pacman contribution graph" src="https://aaditiiiii1.github.io/aaditiiiii1/pacman-contribution-graph.svg">
   </picture>
 </div>
 
