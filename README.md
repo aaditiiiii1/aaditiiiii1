@@ -1,6 +1,6 @@
 <div> <h1 align="center">Hello <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f44b_1f3fb/512.webp" height="40" width="40" alt="aditi-coder-11" /> I'm Aditi Gopinath </h1> 
 <h3 align="center">
-  BTech CSE student @ RV University, Bangalore  
+  B.Tech CSE student @ RV University, Bangalore  
 </h3>
 
 <h3 align="center">
@@ -30,9 +30,19 @@
 
 ---
 
-## 🏆 GitHub Trophies  
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=aaditiiiii1&theme=radical&no-frame=false&no-bg=false&margin-w=4" />
-</p>
+<div align="center">
+  <picture>
+    <source
+      media="(prefers-color-scheme: dark)"
+      srcset="https://raw.githubusercontent.com/aaditiiiii1/aaditiiiii1/output/pacman-contribution-graph-dark.svg">
 
+    <source
+      media="(prefers-color-scheme: light)"
+      srcset="https://raw.githubusercontent.com/aaditiiiii1/aaditiiiii1/output/pacman-contribution-graph.svg">
+
+    <img
+      alt="Pacman contribution graph"
+      src="https://raw.githubusercontent.com/aaditiiiii1/aaditiiiii1/output/pacman-contribution-graph.svg">
+  </picture>
+</div>
 
