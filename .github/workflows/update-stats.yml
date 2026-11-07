@@ -1,0 +1,73 @@
+name: Update README cards
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4.2.2
+
+      - name: Generate stats card
+        continue-on-error: true
+        uses: soulteary/github-readme-stats-action@v1.0.0
+        with:
+          card: stats
+          options: 'username=aaditiiiii1&show_icons=true&include_all_commits=true&count_private=true&hide=issues&bg_color=151515&title_color=ffffff&text_color=ffffff&icon_color=f78c00&ring_color=f78c00'
+          path: profile/stats.svg
+          token: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
+
+      - name: Generate top languages card
+        continue-on-error: true
+        uses: soulteary/github-readme-stats-action@v1.0.0
+        with:
+          card: top-langs
+          options: 'username=aaditiiiii1&layout=compact&langs_count=6&custom_title=Languages%20by%20Code%20Size'
+          path: profile/top-langs.svg
+          token: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
+
+      - name: Fetch streak card
+        continue-on-error: true
+        run: |
+          curl -fsSL --retry 3 --retry-delay 5 \
+            "https://streak-stats.demolab.com?user=aaditiiiii1" \
+            -o profile/streak.svg.tmp
+          mv profile/streak.svg.tmp profile/streak.svg
+
+      - name: Fetch extra stat cards
+        continue-on-error: true
+        env:
+          BASE: https://github-profile-summary-cards.vercel.app/api/cards
+        run: |
+          curl -fsSL --retry 3 --retry-delay 5 -o profile/repos-per-language.svg.tmp "$BASE/repos-per-language?username=aaditiiiii1"
+          mv profile/repos-per-language.svg.tmp profile/repos-per-language.svg
+          curl -fsSL --retry 3 --retry-delay 5 -o profile/productive-time.svg.tmp "$BASE/productive-time?username=aaditiiiii1&utcOffset=5.5"
+          mv profile/productive-time.svg.tmp profile/productive-time.svg
+
+      - name: Render contribution charts and page
+        continue-on-error: true
+        run: python3 scripts/activity_graph.py
+
+      - name: Discard broken cards
+        run: |
+          rm -f profile/*.tmp
+          for f in profile/*.svg; do
+            [ -f "$f" ] || continue
+            if [ ! -s "$f" ] || grep -qiE 'Something went wrong|Resource not accessible|FORBIDDEN|Error' "$f"; then
+              echo "::warning::$f came back broken, keeping the previous version"
+              git checkout -- "$f" 2>/dev/null || rm -f "$f"
+            fi
+          done
+
+      - name: Commit cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A profile docs
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: update README cards"
+          git push
